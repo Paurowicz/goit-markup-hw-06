@@ -775,7 +775,7 @@ img {
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
-  gap: 24px;
+  gap: 23px;
   margin-top: 20px;
   cursor: pointer;
 }
