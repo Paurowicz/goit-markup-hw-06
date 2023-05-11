@@ -913,46 +913,8 @@ img {
 }
 
 .user-icon-checkbox {
-  margin-right: 4px;
-  fill: #2196f3;
-}
-
-.mark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 3px;
-  margin-left: 1.55px;
-  height: 10.8px;
-  width: 10.2px;
-  background-color: #ffffff;
-  border-radius: 1px;
-}
-
-.input-checkbox:checked ~ .mark {
-  background-color: #2196f3;
-}
-
-.mark::after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.input-checkbox:checked ~ .mark:after {
-  display: block;
-}
-
-.checkbox .mark:after {
-  left: 2px;
-  top: 0px;
-  width: 5px;
-  height: 7px;
-  border: solid white;
-  border-width: 0 1.8px 1.8px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  margin-left: 1px;
+  fill: #ffffff;
 }
 
 .input-checkbox {
@@ -961,6 +923,27 @@ img {
   cursor: pointer;
   height: 0;
   width: 0;
+}
+
+.mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 3px;
+  border: 2px solid #2196f3;
+}
+
+.input-checkbox:checked ~ .user-icon-checkbox {
+  background-color: #2196f3;
+}
+
+.checkbox .user-icon-checkbox:after {
+  left: 0px;
+  top: 0px;
+  height: 16px;
+  width: 16px;
 }
 
 .modal-send-button {
